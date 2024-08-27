@@ -1,0 +1,84 @@
+body {
+    background-color: rgba(255, 248, 220, 0.5);
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    text-align: center;
+    height: 7vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-logo {
+    height: 100%;
+}
+
+.titulo {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.escrita {
+    margin-top: 5%;
+    font-size: 30px;
+    width: 80%;
+}
+
+.apresentacao {
+    margin-left: 25%;
+    margin-top: 8%;
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    width: 50%;
+    margin: 4%;
+    flex-direction: column;
+}
+
+.arte {
+    width: auto;
+    height: auto;
+}
+
+.botoes{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.botao{
+    display: flex;
+    margin: 2%;
+    padding: 1%;
+    width: 25%;
+    border-radius: 10px;
+    align-items: center; /* Alinha verticalmente o conteúdo dentro do botão */
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: none;
+    border: #F5B304 5px solid;
+}
+
+.escrita-bt{
+    font-size: 25px;
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+.logo-img{
+    width: 30px;
+}
