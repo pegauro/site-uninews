@@ -25,20 +25,20 @@ body {
 }
 
 .titulo {
-    font-size: 70px;
+    font-size: clamp(2em, 4.5em, 4.5em);
     font-weight: bold;
 }
 
 .escrita {
     margin-top: 5%;
-    font-size: 30px;
+    font-size: 2rem;
     width: 80%;
 }
 
 .baixar {
     margin-top: 5%;
     margin-left: 2%;
-    font-size: 25px;
+    font-size: 1.5rem;
     width: 80%;
 }
 
