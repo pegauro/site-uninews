@@ -4,106 +4,177 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 7vh;
-    background-color: rgba(255, 255, 255, 0.95);
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+@media screen and (orientation: portrait) {
+
+    .cabecalho {
+        width: 100%;
+        height: 8vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .escrita-bt {
+        font-size: 15px;
+    }
+
+    .titulo {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .escrita {
+        margin-top: 5%;
+        font-size: 25px;
+
+    }
+
+    .baixar {
+        margin-top: 5%;
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .arte {
+        width: 70%;
+        height: auto;
+    }
+
+    .apresentacao {
+        margin-top: 2%;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    
+    .img-celular{
+        padding-left: 19%;
+        width: auto;
+    }
+
+    .texto{
+        margin: 2% 5% 0 1%;
+    }
+
+    .botao:active {
+        background-color: #000;
+        transform: 0.3s;
+    }
+    
+    .botao:active .logo-bt {
+        filter: invert(100%) brightness(100%) contrast(100%);
+    }
+    
+    .botao:active .escrita-bt {
+        color: #fff;
+    }
 }
 
-.cab1{
-    width: 44.5%;
+@media screen and (orientation: landscape) {
+    .cabecalho {
+        height: 7vh;
+        background-color: rgba(255, 255, 255, 0.95);    
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding-left: 44.5%;
+    }
+
+    .escrita-bt {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .titulo {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .escrita {
+        margin-top: 5%;
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    .baixar {
+        margin-top: 5%;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .arte {
+        width: 90%;
+        height: auto;
+    }
+
+    .apresentacao {
+        margin-top: 2%;
+        flex-direction: row;
+        margin-left: 21%;
+        width: 60%;
+    }
+
+    .img-celular{
+        width: 50%;
+    }
+
+    .texto{
+        width: 50%;    
+        margin: 10% 5% 0 1%;
+    }
+
+    .botao:hover {
+        background-color: #ffff;
+    }
+
+    .botao:active .logo-bt {
+        filter: #000;
+    }
+    
+    .botao:hover .escrita-bt {
+        color: #000;
+    }
 }
 
+/*Universal*/
 .img-logo {
     height: 100%;
 }
 
-.titulo {
-    font-size: clamp(2em, 4.5em, 4.5em);
-    font-weight: bold;
-}
-
-.escrita {
-    margin-top: 5%;
-    font-size: 2rem;
-    width: 80%;
-}
-
-.baixar {
-    margin-top: 5%;
-    margin-left: 2%;
-    font-size: 1.5rem;
-    width: 80%;
-}
-
 .apresentacao {
-    margin-left: 25%;
-    margin-top: 8%;
-    width: 60%;
     height: 70vh;
     display: flex;
-    flex-direction: row;
 }
 
 .texto {
-    width: 50%;
-    margin: 4%;
     flex-direction: column;
 }
 
-.arte {
-    width: auto;
-    height: auto;
+.botao {
+    display: flex;
+    margin: 2%;
+    padding: 1%;
+    width: 25%;
+    border-radius: 10px;
+    align-items: center;
+    /* Alinha verticalmente o conteúdo dentro do botão */
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #000;
+    border: #000 5px solid;
 }
 
-.botoes{
+.botoes {
+    margin-left: -2%;
     margin-top: 1%;
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 
-.botao{
-    display: flex;
-    margin: 2%;
-    padding: 1%;
-    width: 25%;
-    border-radius: 10px;
-    align-items: center; /* Alinha verticalmente o conteúdo dentro do botão */
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: transparent;
-    border: #F5B304 5px solid;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
-.botao:hover{
-    background-color: #F5B304;
-} 
-
-.botao:hover .logo-img {
-    filter: invert(100%) brightness(100%) contrast(100%);
-}
-
-.botao:hover .escrita-bt {
-    color: #fff;
-}
-
-.escrita-bt{
-    font-size: 25px;
-}
-
-a{
-    text-decoration:none;
-    color:#000;
-}
-
-.logo-img{
+.logo-bt {
     width: 30px;
-    background-image: url('images/android-logo.png');
+    filter: invert(100%) brightness(100%) contrast(100%);
 }
