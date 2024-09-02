@@ -60,7 +60,7 @@ body {
         background-color: #ffff;
         border: #fff 5px solid;
         box-shadow: 5px 5px 10px #000;
-        transform: 0.3s;
+        transform: 0.5s;
     }
 
     .botao:active .logo-bt {
