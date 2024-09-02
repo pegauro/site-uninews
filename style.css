@@ -58,6 +58,8 @@ body {
 
     .botao:active {
         background-color: #ffff;
+        border: #fff 5px solid;
+        box-shadow: 5px 5px 10px #000;
         transform: 0.3s;
     }
 
@@ -123,6 +125,8 @@ body {
 
     .botao:hover {
         background-color: #ffff;
+        border: #fff 5px solid;
+        box-shadow: 5px 5px 10px #000;
     }
 
     .botao:hover .logo-bt {
